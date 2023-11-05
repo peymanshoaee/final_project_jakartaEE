@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Context>
+
+
+    <!--<Resource
+            auth="Container"
+            name="jdbc/product"
+            type="javax.sql.DataSource"
+            maxTotal="100"
+            maxIdle="30"
+            maxWaitMillis="10000"
+            username="root"
+            password="1234"
+            driverClassName="com.mysql.cj.jdbc.Driver"
+            url="jdbc:mysql://localhost:3306/myee"
+
+    />-->
+
+    <ResourceLink name="jdbc/myLocalDb"
+                  global="jdbc/global"
+                  auth="Container"
+                  type="javax.sql.DataSource"
+                  />
+
+</Context>
